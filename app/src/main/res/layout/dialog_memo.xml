@@ -1,6 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/memopad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/memoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/memo"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <ToggleButton
+                android:id="@+id/memoNum1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOff="@string/_1"
+                android:textOn="@string/_1" />
+
+            <ToggleButton
+                android:id="@+id/memoNum2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOff="@string/_2"
+                android:textOn="@string/_2" />
+
+            <ToggleButton
+                android:id="@+id/memoNum3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOff="@string/_3"
+                android:textOn="@string/_3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <ToggleButton
+                android:id="@+id/memoNum4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOff="@string/_4"
+                android:textOn="@string/_4" />
+
+            <ToggleButton
+                android:id="@+id/memoNum5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOff="@string/_5"
+                android:textOn="@string/_5" />
+
+            <ToggleButton
+                android:id="@+id/memoNum6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOff="@string/_6"
+                android:textOn="@string/_6" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <ToggleButton
+                android:id="@+id/memoNum7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOff="@string/_7"
+                android:textOn="@string/_7" />
+
+            <ToggleButton
+                android:id="@+id/memoNum8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOff="@string/_8"
+                android:textOn="@string/_8" />
+
+            <ToggleButton
+                android:id="@+id/memoNum9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOff="@string/_9"
+                android:textOn="@string/_9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/memoDel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delete"
+                android:textColor="@color/purple_500" />
+
+            <Space
+                android:layout_width="80dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/memoCan"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textColor="@color/purple_500" />
+
+            <Button
+                android:id="@+id/memoOk"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ok"
+                android:textColor="@color/purple_500" />
+        </TableRow>
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

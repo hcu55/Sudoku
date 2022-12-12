@@ -21,7 +21,7 @@
             android:background="#8E8E8E"></TableLayout>
 
         <Button
-            android:id="@+id/reset_btn"
+            android:id="@+id/resetButton"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_margin="7dp"
